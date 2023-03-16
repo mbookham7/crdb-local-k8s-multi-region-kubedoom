@@ -180,7 +180,7 @@ kubectl get pods --namespace $aks_region
 
 Next, create a secure client in the first region.
 ```
-kubectl create -f https://raw.githubusercontent.com/cockroachdb/cockroach/master/cloud/kubernetes/multiregion/client-secure.yaml --namespace $eks_region
+kubectl create -f manifest/client-secure.yaml --namespace $eks_region
 ```
 
 Now exec into the pod using the CockraochDB SQL client.
