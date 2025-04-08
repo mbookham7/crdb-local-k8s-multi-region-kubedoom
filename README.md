@@ -58,16 +58,12 @@ kubectl create secret \
 generic cockroachdb.client.root \
 --from-file=certs \
 --namespace $eks_region
-```
 
-```
 kubectl create secret \
 generic cockroachdb.client.root \
 --from-file=certs \
 --namespace $gke_region
-```
 
-```
 kubectl create secret \
 generic cockroachdb.client.root \
 --from-file=certs \
